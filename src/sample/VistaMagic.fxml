@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Menu?>
@@ -25,16 +24,21 @@
                <children>
                   <MenuBar>
                     <menus>
-                      <Menu mnemonicParsing="false" text="File">
+                        <Menu mnemonicParsing="false" text="Cargar">
+                          <items>
+                            <MenuItem fx:id="todas" mnemonicParsing="false" onAction="#todas" text="Todas las cartas" />
+                          </items>
+                        </Menu>
+                      <Menu mnemonicParsing="false" text="Rarezas">
                         <items>
-                          <MenuItem fx:id="refresh" mnemonicParsing="false" text="Refresh" />
+                          <MenuItem fx:id="common" mnemonicParsing="false" onAction="#common" text="Common" />
+                              <MenuItem fx:id="uncommon" mnemonicParsing="false" onAction="#uncommon" text="Uncommon" />
+                              <MenuItem fx:id="rare" mnemonicParsing="false" onAction="#rare" text="Rare" />
                         </items>
                       </Menu>
                     </menus>
                   </MenuBar>
                   <ListView fx:id="List" onMouseClicked="#acceder" prefHeight="347.0" prefWidth="575.0" VBox.vgrow="ALWAYS" />
-                  <Button fx:id="refresh" mnemonicParsing="false" onAction="#refh" text="Refresh" />
-                  <Button fx:id="colo" mnemonicParsing="false" onAction="#colo" prefHeight="26.0" prefWidth="67.0" text="Color" />
                </children>
             </VBox>
             <Separator orientation="VERTICAL" prefHeight="598.0" prefWidth="33.0" />
@@ -86,7 +90,6 @@
             </VBox>
          </children>
       </HBox>
-      <TextField fx:id="textcolor" GridPane.rowIndex="1" />
    </children>
    <columnConstraints>
       <ColumnConstraints />

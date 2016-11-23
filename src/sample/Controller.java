@@ -37,29 +37,6 @@ public class Controller {
     public AnchorPane apMainPane;
     public ArrayList<Card> result;
 
-
-
-    public void refh(ActionEvent actionEvent) {
-
-        API api = new API();
-        result = api.getAllCards();
-
-        ObservableList<Tuple<String, String>> items =FXCollections.observableArrayList();
-
-
-
-        if (result!=null) {
-            for (int i = 0; i < result.size(); i++) {
-                items.add(new Tuple<>(result.get(i).getName(), result.get(i).getPosterUrl()));
-            }
-        }
-        List.setItems(items);
-
-        Celdas();
-
-
-    }
-
     private void Celdas() {
         List.setCellFactory(param -> new ListCell<Tuple<String, String>>() {
             private ImageView imageView = new ImageView();
@@ -83,7 +60,6 @@ public class Controller {
         });
     }
 
-
     public void acceder(MouseEvent mouseEvent) {
         System.out.println( List.getSelectionModel().getSelectedItems());
         Tuple<String, String> id =  List.getSelectionModel().getSelectedItem();
@@ -105,8 +81,7 @@ public class Controller {
         }
     }
 
-    public void colo(ActionEvent actionEvent) {
-
+    public void common(ActionEvent actionEvent) {
         String rar = "Common";
         API api = new API();
         result = api.getAllCards();
@@ -116,7 +91,7 @@ public class Controller {
         if (result!=null) {
             for (int i = 0; i < result.size(); i++) {
                 {
-                    if (result.get(i).getRarity().equalsIgnoreCase("Common")) {
+                    if (result.get(i).getRarity().equalsIgnoreCase(rar)) {
                         items.add(new Tuple<>(result.get(i).getName(), result.get(i).getPosterUrl()));
                     }
                     else{
@@ -127,8 +102,70 @@ public class Controller {
         }
         List.setItems(items);
         Celdas();
-
-
     }
 
+    public void uncommon(ActionEvent actionEvent) {
+        String rar = "Uncommon";
+        API api = new API();
+        result = api.getAllCards();
+
+        ObservableList<Tuple<String, String>> items =FXCollections.observableArrayList();
+
+        if (result!=null) {
+            for (int i = 0; i < result.size(); i++) {
+                {
+                    if (result.get(i).getRarity().equalsIgnoreCase(rar)) {
+                        items.add(new Tuple<>(result.get(i).getName(), result.get(i).getPosterUrl()));
+                    }
+                    else{
+
+                    }
+                }
+            }
+        }
+        List.setItems(items);
+        Celdas();
+    }
+
+    public void rare(ActionEvent actionEvent) {
+        String rar = "Rare";
+        API api = new API();
+        result = api.getAllCards();
+
+        ObservableList<Tuple<String, String>> items =FXCollections.observableArrayList();
+
+        if (result!=null) {
+            for (int i = 0; i < result.size(); i++) {
+                {
+                    if (result.get(i).getRarity().equalsIgnoreCase(rar)) {
+                        items.add(new Tuple<>(result.get(i).getName(), result.get(i).getPosterUrl()));
+                    }
+                    else{
+
+                    }
+                }
+            }
+        }
+        List.setItems(items);
+        Celdas();
+    }
+
+    public void todas(ActionEvent actionEvent) {
+
+        API api = new API();
+        result = api.getAllCards();
+
+        ObservableList<Tuple<String, String>> items =FXCollections.observableArrayList();
+
+
+
+        if (result!=null) {
+            for (int i = 0; i < result.size(); i++) {
+                items.add(new Tuple<>(result.get(i).getName(), result.get(i).getPosterUrl()));
+            }
+        }
+        List.setItems(items);
+
+        Celdas();
+    }
 }
