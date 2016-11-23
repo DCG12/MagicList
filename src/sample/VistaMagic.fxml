@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" prefHeight="1500.0" prefWidth="1500.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="598.0" prefWidth="385.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <MenuBar>
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem fx:id="refresh" mnemonicParsing="false" text="Refresh" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                  <ListView fx:id="List" onMouseClicked="#acceder" prefHeight="347.0" prefWidth="575.0" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="refresh" mnemonicParsing="false" onAction="#refh" text="Refresh" />
+                  <Button fx:id="colo" mnemonicParsing="false" onAction="#colo" prefHeight="26.0" prefWidth="67.0" text="Color" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="598.0" prefWidth="33.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="77.0" text="Nombre">
+                     <VBox.margin>
+                        <Insets left="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="nombre">
+                     <VBox.margin>
+                        <Insets bottom="16.0" left="16.0" right="16.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ImageView fx:id="imagenCarta" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </VBox.margin></ImageView>
+                  <Label text="Tipo">
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="tipo">
+                     <VBox.margin>
+                        <Insets bottom="16.0" left="16.0" right="16.0" />
+                     </VBox.margin></TextField>
+                  <Label text="Rareza">
+                     <VBox.margin>
+                        <Insets left="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="rareza">
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" />
+                     </VBox.margin></TextField>
+                  <Label text="Texto">
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="texto" prefHeight="200.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="16.0" left="16.0" right="16.0" />
+                     </VBox.margin>
+                  </TextArea>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TextField fx:id="textcolor" GridPane.rowIndex="1" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
