@@ -168,4 +168,74 @@ public class Controller {
 
         Celdas();
     }
+
+    public void mythic(ActionEvent actionEvent) {
+        String rar = "Mythic Rare";
+        API api = new API();
+        result = api.getAllCards();
+
+        ObservableList<Tuple<String, String>> items =FXCollections.observableArrayList();
+
+        if (result!=null) {
+            for (int i = 0; i < result.size(); i++) {
+                {
+                    if (result.get(i).getRarity().equalsIgnoreCase(rar)) {
+                        items.add(new Tuple<>(result.get(i).getName(), result.get(i).getPosterUrl()));
+                    }
+                    else{
+
+                    }
+                }
+            }
+        }
+        List.setItems(items);
+        Celdas();
+    }
+
+    public void special(ActionEvent actionEvent) {
+        String rar = "Special";
+        API api = new API();
+        result = api.getAllCards();
+
+        ObservableList<Tuple<String, String>> items =FXCollections.observableArrayList();
+
+        if (result!=null) {
+            for (int i = 0; i < result.size(); i++) {
+                {
+                    if (result.get(i).getRarity().equalsIgnoreCase(rar)) {
+                        items.add(new Tuple<>(result.get(i).getName(), result.get(i).getPosterUrl()));
+                    }
+                    else{
+
+                    }
+                }
+            }
+        }
+        List.setItems(items);
+        Celdas();
+    }
+
+    public void land(ActionEvent actionEvent) {
+        String rar = "Basic Land";
+        API api = new API();
+        result = api.getAllCards();
+
+        ObservableList<Tuple<String, String>> items =FXCollections.observableArrayList();
+
+        if (result!=null) {
+            for (int i = 0; i < result.size(); i++) {
+                {
+                    if (result.get(i).getRarity().equalsIgnoreCase(rar)) {
+                        items.add(new Tuple<>(result.get(i).getName(), result.get(i).getPosterUrl()));
+                    }
+                    else{
+
+                    }
+                }
+            }
+        }
+        List.setItems(items);
+        Celdas();
+    }
 }
+

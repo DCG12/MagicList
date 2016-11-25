@@ -34,6 +34,9 @@
                           <MenuItem fx:id="common" mnemonicParsing="false" onAction="#common" text="Common" />
                               <MenuItem fx:id="uncommon" mnemonicParsing="false" onAction="#uncommon" text="Uncommon" />
                               <MenuItem fx:id="rare" mnemonicParsing="false" onAction="#rare" text="Rare" />
+                              <MenuItem fx:id="mythic" mnemonicParsing="false" onAction="#mythic" text="Mythic Rare" />
+                              <MenuItem fx:id="special" mnemonicParsing="false" onAction="#special" text="Special" />
+                              <MenuItem fx:id="land" mnemonicParsing="false" onAction="#land" text="Basic Land" />
                         </items>
                       </Menu>
                     </menus>
