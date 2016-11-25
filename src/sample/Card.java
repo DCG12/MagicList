@@ -1,5 +1,7 @@
 package sample;
 
+import org.json.JSONArray;
+
 public class Card {
     private String name;
     private String type;
