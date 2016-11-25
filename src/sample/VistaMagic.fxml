@@ -84,10 +84,13 @@
                         <Insets left="16.0" top="16.0" />
                      </VBox.margin>
                   </Label>
-                  <TextArea fx:id="texto" prefHeight="200.0" prefWidth="200.0">
+                  <TextArea fx:id="texto" prefHeight="131.0" prefWidth="625.0" wrapText="true">
                      <VBox.margin>
                         <Insets bottom="16.0" left="16.0" right="16.0" />
                      </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </TextArea>
                </children>
             </VBox>
