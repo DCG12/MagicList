@@ -1,17 +1,11 @@
 package sample;
 
-import com.sun.istack.internal.Nullable;
-import com.sun.jndi.toolkit.url.Uri;
-
 import java.io.IOException;
-import java.net.URI;
 import java.util.ArrayList;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-/**
- * Created by 46406163y on 07/11/16.
- */
+
 public class API {
 
     private final String BASE_URL = "https://api.magicthegathering.io/v1/cards/";

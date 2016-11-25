@@ -2,39 +2,23 @@ package sample;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.embed.swing.JFXPanel;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.ComboBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
-import javafx.util.Pair;
-import sun.rmi.runtime.Log;
-import java.awt.*;
-import java.awt.Button;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
 import java.util.ArrayList;
 
 public class Controller {
 
     public ImageView imagenCarta;
     public TextField nombre;
-    public TextField color;
     public TextField tipo;
     public TextField rareza;
     public TextArea texto;
-    public TextField textcolor;
-    private ArrayList<String> ejemplo = new ArrayList<>();
     public ListView<Tuple<String, String>> List;
-    public AnchorPane apMainPane;
     public ArrayList<Card> result;
 
     private void Celdas() {

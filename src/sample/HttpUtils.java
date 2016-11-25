@@ -4,9 +4,6 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * Created by 46406163y on 28/10/16.
- */
 public class HttpUtils {
 
     public static String get(String dataUrl) throws IOException {

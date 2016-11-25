@@ -1,9 +1,5 @@
 package sample;
 
-/**
- * Created by 45858000w on 18/11/16.
- */
-
 public class Tuple<X, Y> {
     public final X x;
     public final Y y;
