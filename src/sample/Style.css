@@ -1,0 +1,44 @@
+.background {
+    -fx-background-color: #555000;
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #00008B;
+    -fx-opacity: 0.6;
+}
+
+.text-area {
+    -fx-padding: 0;
+    -fx-cursor: default;
+    -fx-background-color: black;
+}
+
+.text-field {
+    -fx-padding: 0;
+    -fx-cursor: default;
+    -fx-background-color: #E0FFFF;
+}
+
+.menu-bar {
+    -fx-padding: 0.0em 0.666667em 0.0em 0.666667em; /* 0 8 0 8 */
+    -fx-spacing: 0.166667em; /* 2 */
+    -fx-background-color:#E0FFFF;
+    -fx-background-insets: 0 0 0 0, 1 0 1 0;
+    -fx-background-radius: 0, 0 ;
+}
+
+.menu-item {
+    -fx-background-color: #E0FFF3;
+    -fx-padding: 0.333333em 0.41777em 0.333333em 0.41777em;  /* 4 5 4 5 */
+}
+
+.list-cell:odd {
+    -fx-background: #E0CCFF;
+}
+
+.vbox {
+    -fx-background-color: #00012B;
+}
+
