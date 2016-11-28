@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Menu?>
@@ -17,7 +16,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane alignment="center" hgap="10" prefHeight="1500.0" prefWidth="1500.0" stylesheets="@Style.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" prefHeight="1500.0" prefWidth="1500.0" styleClass="vbox" stylesheets="@Style.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@Style.css" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
          <children>
@@ -43,7 +42,6 @@
                     </menus>
                   </MenuBar>
                   <ListView fx:id="List" onMouseClicked="#acceder" prefHeight="347.0" prefWidth="575.0" VBox.vgrow="ALWAYS" />
-                  <ComboBox prefWidth="150.0" />
                </children>
             </VBox>
             <Separator orientation="VERTICAL" prefHeight="598.0" prefWidth="33.0" />
